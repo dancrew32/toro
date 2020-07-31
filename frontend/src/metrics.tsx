@@ -26,8 +26,10 @@ function useMetrics() {
 
 // Thought it might be nice to augment the metrics response with a type
 function getColumnType(currentTable: TableType, name: string): string {
-  const column = currentTable.columns.find((column: ColumnType) => column.name === name);
-  return column ? column.type : ' ';
+  const column = currentTable.columns.find(
+    (column: ColumnType) => column.name === name
+  );
+  return column ? column.type : " ";
 }
 
 export function Metrics() {
@@ -52,7 +54,10 @@ export function Metrics() {
   return (
     <div>
       <h3>
-        <span>Metrics:</span> <code>{currentTable.schema}.{currentTable.table}</code>
+        <span>Metrics:</span>{" "}
+        <code>
+          {currentTable.schema}.{currentTable.table}
+        </code>
       </h3>
       <table className="metric">
         <thead>
@@ -66,7 +71,11 @@ export function Metrics() {
         </thead>
         <tbody>
           {appState.metrics.map((metric: MetricType) => (
-            <Metric key={metric.id} {...metric} columnType={getColumnType(currentTable, metric.column)} />
+            <Metric
+              key={metric.id}
+              {...metric}
+              columnType={getColumnType(currentTable, metric.column)}
+            />
           ))}
         </tbody>
       </table>
