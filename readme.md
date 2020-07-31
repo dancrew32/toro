@@ -1,5 +1,7 @@
 # Toro interview
 
+![Toro Tables](toro_tables.png?raw=true "Toro Tables")
+
 ## Frontend
 
 ### Install & Run
