@@ -1,0 +1,62 @@
+import * as React from "react";
+import { useEffect } from "react";
+
+import { Nav } from "./nav";
+
+function useTitle() {
+  useEffect(() => {
+    document.title = "Toro Interview!";
+  }, []);
+}
+
+export default function Home() {
+  useTitle();
+  return (
+    <div className="container">
+      <Nav />
+      <article>
+        <div className="inner">
+          <h2>Overview</h2>
+          <p>
+            Here at Toro we have to build tools that make navigating and
+            managing a large number of disparate metrics and datasets fast and
+            approachable to a variety of different end users - analysts, data
+            scientists, PMs, and engineers.
+          </p>
+          <p>
+            For this challenge, you will be given APIs to retrieve tables and
+            metrics associated with them and your goal is to create an interface
+            for users to navigate these metrics.
+          </p>
+
+          <h2>Requirements</h2>
+          <p>
+            There are no restrictions on how to design and implement the
+            interface, but be ready to discuss both your technical and product
+            decisions. We expect you to spend no more than two hours on this
+            project, and if you have any questions or issues, feel free to reach
+            out to [redacted].
+          </p>
+          <p>
+            When you’re done, email [redacted] with a link to a GitHub repo or a
+            zip of your files, and instructions on how to run your project.
+          </p>
+          <p>
+            For the final deliverable, as a user of your interface, I should: Be
+            able to navigate to all of the metrics available to me See all of
+            the configuration for a particular metric
+          </p>
+
+          <h2>APIs</h2>
+          <p>List of all tables https://interview.torodata.io/tables</p>
+          <p>
+            List of metrics for a given table
+            {"https://interview.torodata.io/metrics/{tableId}"}
+            e.g - all of the metrics for the table with an id=1 would be at
+            https://interview.torodata.io/metrics/1
+          </p>
+        </div>
+      </article>
+    </div>
+  );
+}

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tables /> 1`] = `
+<div
+  className="container"
+>
+  <nav>
+    <a
+      className="active"
+      href="/"
+      onClick={[Function]}
+    >
+      Toro
+    </a>
+    <a
+      className=""
+      href="/tables"
+      onClick={[Function]}
+    >
+      Tables
+    </a>
+  </nav>
+  <aside>
+    <div
+      className="inner"
+    >
+      <div>
+        <h3>
+          Tables
+        </h3>
+        <div
+          className="search"
+        >
+          <input
+            autoFocus={true}
+            onChange={[Function]}
+            placeholder="Search..."
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main>
+    <div
+      className="inner"
+    >
+      <div>
+        Please select a schema & table to view its metrics.
+      </div>
+    </div>
+  </main>
+</div>
+`;

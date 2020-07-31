@@ -1,0 +1,14 @@
+
+
+
+[
+    {
+        "id": 5,
+        "metric": "COUNT_DISTINCT",
+        "column": "ip_address",
+        "currentValue": 34083.0
+    }
+]
+
+
+

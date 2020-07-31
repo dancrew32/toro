@@ -1,0 +1,20 @@
+
+[
+    {
+        "id": 1,
+        "metric": "COUNT",
+        "column": "id",
+        "currentValue": 50.0
+    },
+    {
+        "id": 2,
+        "metric": "HOURS_SINCE_MAX_DATE",
+        "column": "created_at",
+        "currentValue": 2.53
+    }
+]
+
+
+
+
+

@@ -1,0 +1,20 @@
+
+
+
+
+[
+    {
+        "id": 6,
+        "metric": "SUM",
+        "column": "page_views",
+        "currentValue": 972502.0
+    },
+    {
+        "id": 7,
+        "metric": "COUNT_DISTINCT",
+        "column": "page_name",
+        "currentValue": 37.0
+    }
+]
+
+

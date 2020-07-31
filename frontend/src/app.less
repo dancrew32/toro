@@ -1,0 +1,162 @@
+@import (reference) "./colors.less";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: monospace;
+  background-color: @toro_dark;
+  color: @toro_light;
+}
+
+a {
+  text-decoration: none;
+  color: @toro_light;
+  &:hover {
+    text-decoration: underline;
+    color: darken(@toro_light, 10%);
+  }
+  &.active,
+  &:active {
+    color: @toro_primary;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+#root {
+  height: calc(100% - @navHeight);
+  padding-top: @navHeight;
+}
+
+@navHeight: 40px;
+nav {
+  background-color: @toro_light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: @navHeight;
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: @toro_dark;
+    border: 1px solid @toro_light;
+    padding: 10px 20px;
+    display: inline-block;
+    &:hover {
+      color: lighten(@toro_dark, 10%);
+    }
+    &:active {
+      color: @toro_primary;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.inner {
+  padding: 10px;
+}
+
+aside {
+  flex: 0 0 220px;
+  border-right: 1px solid @toro_mid;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+.search {
+  position: relative;
+  input {
+    display: block;
+    margin: 0 0 10px;
+    max-width: 175px;
+  }
+  .clear-button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+}
+
+main {
+  flex: 1;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+article {
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.table-schema {
+  position: relative;
+  a {
+    padding: 3px 0;
+    display: block;
+  }
+}
+
+.table-columns {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  height: auto;
+  max-height: 600px;
+  margin-left: 10px;
+}
+.table-columns-collapsed {
+  max-height: 0;
+}
+
+.table-columns-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px;
+  transition: transform 0.1s ease;
+  transform: rotate(90deg);
+}
+.table-columns-toggle-open {
+  transform: rotate(0deg);
+}
+
+table {
+  margin: 0 0 3px;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-image: none;
+  width: 100%;
+  max-width: 550px;
+}
+
+th,
+td {
+  text-align: left;
+  border: 1px solid @toro_mid;
+  padding: 3px;
+}

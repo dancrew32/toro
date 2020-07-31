@@ -1,0 +1,20 @@
+
+
+
+
+
+
+[
+    {
+        "id": 8,
+        "metric": "AVG",
+        "column": "tax",
+        "currentValue": 12.5
+    },
+    {
+        "id": 9,
+        "metric": "HOURS_SINCE_MAX_DATE",
+        "column": "payment_date",
+        "currentValue": 12.49
+    }
+]

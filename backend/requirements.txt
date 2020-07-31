@@ -1,0 +1,7 @@
+jupyter
+jupyterlab
+pandas
+scipy
+matplotlib
+requests
+flask
