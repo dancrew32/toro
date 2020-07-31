@@ -15,4 +15,5 @@ export type MetricType = {
   currentValue: number;
   id: number;
   metric: string;
+  columnType?: string; // augmented helper
 };

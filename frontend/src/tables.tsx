@@ -11,8 +11,9 @@ type TablesPropsType = {
 };
 
 function useTitle() {
+  // TODO(DAN): helper for getting current table from context, update title.
   useEffect(() => {
-    document.title = "Tables";
+    document.title = "Tables & Metrics";
   }, []);
 }
 

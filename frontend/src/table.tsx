@@ -18,7 +18,7 @@ export function Table(props: TableType) {
     <div>
       <div
         className={clsx("table-schema", {
-          "table-schema-active": id === appState.currentTableId,
+          "table-schema-active": id === +appState.currentTableId,
         })}
       >
         <A href={`/tables/${id}`}>

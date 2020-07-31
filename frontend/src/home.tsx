@@ -51,7 +51,7 @@ export default function Home() {
           <p>List of all tables https://interview.torodata.io/tables</p>
           <p>
             List of metrics for a given table
-            {"https://interview.torodata.io/metrics/{tableId}"}
+            {"https://interview.torodata.io/metrics/{tableId} "}
             e.g - all of the metrics for the table with an id=1 would be at
             https://interview.torodata.io/metrics/1
           </p>
